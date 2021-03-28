@@ -1,0 +1,11 @@
+﻿@page
+@model TextModel
+@{
+    ViewData["Title"] = "Text";
+}
+<h1>Text</h1>
+
+@foreach (var paragraph in Model.Paragraphs)
+{
+    <p>@paragraph</p>
+}

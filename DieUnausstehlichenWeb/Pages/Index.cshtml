@@ -1,0 +1,42 @@
+﻿@page
+@using DieUnausstehlichenWeb.Services
+@inject IUptimeProvider Uptime
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="home-menu">
+    <ul>
+        <li>
+            <a href="@Url.PageLink("Privacy")">privacy</a>
+        </li>
+        <li>
+            <a href="@Url.PageLink("Text")">text</a>
+        </li>
+        <li>
+            <a href="@Url.PageLink("Minecraft/Index")">minecraft</a>
+        </li>
+        <li>
+            <a href="#">lacinia quam libero</a>
+        </li>
+        <li>
+            <a href="#">posuere et iaculis commodo</a>
+        </li>
+    </ul>
+</div>
+
+<div>
+    @foreach (var (name, value) in Uptime.GetStates())
+    {
+        switch (value)
+        {
+            case UpState.Up:                
+                <div>@name is online.</div>
+                break;
+            case UpState.Down:
+                <div>@name is offline.</div>
+                break;
+        }
+    }
+</div>

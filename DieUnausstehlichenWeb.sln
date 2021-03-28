@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DieUnausstehlichenWeb", "DieUnausstehlichenWeb\DieUnausstehlichenWeb.csproj", "{95369A66-9BE9-41B7-8AC4-7932B4924FDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95369A66-9BE9-41B7-8AC4-7932B4924FDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95369A66-9BE9-41B7-8AC4-7932B4924FDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95369A66-9BE9-41B7-8AC4-7932B4924FDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95369A66-9BE9-41B7-8AC4-7932B4924FDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
