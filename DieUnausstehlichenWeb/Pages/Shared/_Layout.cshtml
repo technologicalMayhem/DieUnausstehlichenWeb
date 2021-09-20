@@ -1,34 +1,6 @@
-﻿@using DieUnausstehlichenWeb.Helper
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="The 'Die Unausstehlichen' website.">
-    <title>@ViewData["Title"] - Die Unausstehlichen Web</title>
-    <link rel="stylesheet" href="~/css/site.css"/>
-</head>
-<body>
-
-<div class="main">
-    <div class="header">
-        <a class="header-title header-element" href="@Url.Page("/Index")">die unausstehlichen</a>
-        <div class="header-items header-element">
-            <span class="header-item-glyph">About</span>
-            <span class="header-item-glyph">Stuff</span>
-            <span class="header-item-glyph">Things</span>
-            <span class="header-item-glyph">Cat pics</span>
-            <span >I love my cute derg</span>
-        </div>
-    </div>
-    <div class="content">
-        @RenderBody()
-    </div>
+﻿@{
+    Layout = "_LayoutBase";
+}
+<div class="content">
+    @RenderBody()
 </div>
-
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/js/site.js" asp-append-version="true"></script>
-@await RenderSectionAsync("Scripts", required: false)
-
-</body>
-</html>

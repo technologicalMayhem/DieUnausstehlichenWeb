@@ -1,11 +1,59 @@
 ﻿@page
+@using DieUnausstehlichenWeb.Helper
 @model DieUnausstehlichenWeb.Pages.Minecraft.Index
+
+@section Scripts
+{
+    <link rel="stylesheet" href="css/minecraft.css"/>
+    <script src="js/minecraftTimer.js"></script>
+}
 
 @{
     ViewData["Title"] = "Text";
+    Layout = "Shared/_LayoutBase";
 }
 
-<h1>Minecraft</h1>
-<div>
-    
+<div class="content">
+    <h1>Minecraft</h1>
+</div>
+<div class="cutout-container">
+    <div class="cutout-background bg-minecraft"></div>
+    <div class="cutout-foreground">
+        <div class="content">
+            <div class="minecraft-box">
+                <div>
+                    <div>
+                        <p>Players 3/20</p>
+                        <p>Age: 3 months</p>
+                        <p>Map Link</p>
+                    </div>
+                    <div></div>
+                </div>
+                <div>
+                    <div class="countdown-text">
+                        Time until this season ends
+                    </div>
+                    <span class="countdown-timer flex-wrap-center">
+                        <span >
+                            <span class="timer-number">000</span>
+                            <span class="timer-letter">d</span>
+                        </span>
+                        <span class="flex-wrap-center">
+                            <span >
+                                <span class="timer-number">00</span>
+                                <span class="timer-letter">h</span>
+                            </span>
+                            <span >
+                                <span class="timer-number">00</span>
+                                <span class="timer-letter">m</span>
+                            </span>
+                            <span >
+                                <span class="timer-number">00</span>
+                                <span class="timer-letter">s</span>
+                            </span>
+                        </span>
+                    </span>
+                </div></div>
+        </div>
+    </div>
 </div>

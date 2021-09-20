@@ -1,0 +1,56 @@
+﻿.bg-minecraft {
+    background-image: url("/img/minecraft-bg.bmp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(2px);
+}
+
+.cutout-container{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100vw;
+}
+
+.cutout-background {
+    box-sizing: border-box; /* required */
+    width: 100%; /* required */
+    flex: none; /* required */
+    z-index: 0;
+    box-shadow: inset 0 8px 6px -6px black;
+}
+
+.cutout-foreground {
+    box-sizing: border-box; /* required */
+    width: 100%; /* required */
+    flex: none; /* required */
+    margin-left: -100%; /* required */
+    z-index: 1;
+}
+
+.minecraft-box {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border: 0.25em solid white;
+    background-color: rgba(32, 32, 32, 0.9);
+    border-radius: 1em;
+    margin: 2em 0;
+}
+
+.countdown-text {
+    margin: 1em;
+}
+
+.countdown-timer {
+    margin: 1em;
+}
+
+.timer-number {
+    font-size: 2em;
+}
+
+.timer-letter {
+    font-size: 2.5em;
+    margin-right: .25em;
+}
